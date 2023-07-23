@@ -1,6 +1,6 @@
 export default function Footer() {
   return (
-    <footer className="grid grid-cols-2 gap-4">
+    <footer className="grid sm:grid-cols-2 grid-cols-1 gap-4">
       <div>
         <h3 className="text-3xl font-bold">Rent a Tes</h3>
         <p>We offers a big range of vehicles for all your driving needs. We have the perfect car to meet your needs.</p>
