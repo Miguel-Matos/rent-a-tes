@@ -1,6 +1,5 @@
 export default function Footer() {
   return (
-    // Center the footer
     <footer className="flex">
       <div className="grid md:grid-cols-2 grid-cols-1 lg:grid-cols-4 gap-10 my-14">
         <div className="flex flex-col items-center md:items-start">
