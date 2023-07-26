@@ -1,8 +1,8 @@
 export default function Footer() {
   return (
     // Center the footer
-    <footer className="flex justify-center">
-      <div className="grid md:grid-cols-2 grid-cols-1 xl:grid-cols-4 gap-10 m-14">
+    <footer className="flex">
+      <div className="grid md:grid-cols-2 grid-cols-1 lg:grid-cols-4 gap-10 my-14">
         <div className="flex flex-col items-center md:items-start">
           <h3 className="text-3xl font-bold">Rent a Tes</h3>
           <p className="text-center md:text-start">We offer a variety of Tesla models for all your needs. Your perfect car is waiting for you.</p>
