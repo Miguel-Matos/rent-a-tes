@@ -1,10 +1,15 @@
-import top from '../img/top.png'
+import top from '../img/top2.png'
 
 export default function TopBanner(props: {name: string}) {
   return(
-    <div className='absolute top-0 left-0 min-w-[1000px] max-w-[1200px]'>
-      <img className='opacity-10' src={top} alt="top banner" />
-      <h1 className='absolute top-0 left-0 text-4xl font-bold'>{props.name}</h1>
+    <div className='w-fit overflow-hidden'>
+      {/* <div className='absolute top-0 left-0 min-w-[1500px] max-w-[4000px] overflow-hidden'>
+        <img className='opacity-10' src={top} alt="top banner" />
+      </div>
+      <div className='min-h-[250px] xl:min-h-[275px] 2xl:min-h-[300px]'>
+        <h1 className='text-4xl font-bold'>{props.name}</h1>
+      </div> */}
     </div>
+
   )
 }

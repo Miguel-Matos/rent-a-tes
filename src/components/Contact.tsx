@@ -1,10 +1,11 @@
+import BottomBanner from "./BottomBanner"
 import TopBanner from "./TopBanner"
 
 export default function Contact() {
 
   return(
     <div>
-      <TopBanner name='Contact' />
+      {/* <TopBanner name='Contact' /> */}
       <h3>Need additional information?</h3>
       <p>A team of skilled professionals with over 15 years of experience are happy to assist with any questions or concerns.</p>
       <a href="tel:1234567890">(123)-456-7890</a>
@@ -22,6 +23,7 @@ export default function Contact() {
 
         <button>Send Message</button>
       </form>
+      {/* <BottomBanner /> */}
     </div>
 
   ) 
