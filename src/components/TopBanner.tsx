@@ -25,7 +25,7 @@ export default function TopBanner() {
     contact: 'Contact',
   };
 
-  const currentPageName = pages[currentPage as keyof Pages] || 'Page Not Found';
+  const currentPageName = pages[currentPage as keyof Pages];
 
   return(
     <div className='h-[315px]'>
