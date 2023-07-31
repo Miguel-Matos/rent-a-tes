@@ -32,7 +32,7 @@ function App() {
           <Header />
         </div>
         
-        {homePage ? <TopBanner name='Contact' /> : null}
+        {homePage ? <TopBanner /> : null}
 
         <div className='md:w-3/4 px-5 flex flex-col mx-auto'>
           <Routes>

@@ -16,11 +16,11 @@ export default function Header() {
     <div>
       <nav className='md:flex justify-between my-14 text-lg font-bold hidden'>
         <img className='w-10 md:w-16' src={logo} alt='Logo' />
-        <Link className='hover:text-red-600' to='/'>Home</Link>
-        <Link className='hover:text-red-600' to="/about">About</Link>
-        <Link className='hover:text-red-600' to="/models">Models</Link>
-        <Link className='hover:text-red-600' to="/testimonials">Testimonials</Link>
-        <Link className='hover:text-red-600' to="/contact">Contact</Link>
+        <Link id='home' className='hover:text-red-600' to='/'>Home</Link>
+        <Link id='about' className='hover:text-red-600' to="/about">About</Link>
+        <Link id='models' className='hover:text-red-600' to="/models">Models</Link>
+        <Link id='testimonials' className='hover:text-red-600' to="/testimonials">Testimonials</Link>
+        <Link id='contact' className='hover:text-red-600' to="/contact">Contact</Link>
       </nav>
 
       <nav className='flex justify-between my-14 text-lg font-bold md:hidden'>
