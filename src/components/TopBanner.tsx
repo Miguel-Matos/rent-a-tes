@@ -30,10 +30,11 @@ export default function TopBanner() {
   return(
     <div className='h-[315px]'>
       <div className='absolute top-0 left-0  pointer-events-none overflow-hidden'>
-        <img className='opacity-20 min-h-[400px] object-cover' src={top} alt="top banner" />
+        <div className=' bg-white w-screen min-h-[400px] h-[500px] opacity-50 absolute'></div>
+        <img className='min-h-[400px] -z-20 object-cover' src={top} alt="top banner" />
       </div>
       <div className='flex md:justify-center'>
-        <h1 className='text-5xl font-bold p-5 w-3/4'>{currentPageName}</h1>
+        <h1 className='text-5xl z-10 font-bold p-5 w-3/4'>{currentPageName}</h1>
       </div>
     </div>
 

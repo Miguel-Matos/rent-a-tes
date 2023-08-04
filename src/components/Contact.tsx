@@ -16,7 +16,7 @@ export default function Contact() {
         </div>
       </div>
 
-      <form className="flex flex-col w-full">
+      <form className="flex flex-col w-full mb-32">
         <label className="text-center lg:text-left font-bold py-5 text-lg" htmlFor="name">Full Name<span className='text-red-500'>*</span></label>
         <input className="border bg-slate-100 p-5" type="text" id="name" placeholder="John Smith" required />
 
@@ -26,9 +26,13 @@ export default function Contact() {
         <label className="text-center lg:text-left font-bold py-5 text-lg" htmlFor="info">Tell us about it<span className='text-red-500'>*</span></label>
         <textarea className="border bg-slate-100 p-5" id="info" placeholder="Description" />
 
-        <button className=" bg-red-500 p-5 text-white font-bold text-lg mt-10 mb-32 shadow-md hover:shadow-2xl focus:bg-red-600 rounded-md"><FontAwesomeIcon icon={faEnvelopeOpenText} /> Send Message</button>
+        <button className=" bg-red-500 p-5 text-white font-bold text-lg mt-10 shadow-md hover:shadow-2xl focus:bg-red-600 rounded-md"><FontAwesomeIcon icon={faEnvelopeOpenText} /> Send Message</button>
       </form>
-      {/* <img className='absolute -z-10 pointer-events-none opacity-50' src={world} alt='world' /> */}
+
+      <div className='absolute -z-10 pointer-events-none overflow-hidden'>
+        <img className='opacity-20  object-none' src={world} alt="world" />
+      </div>
+
     </div>
 
   ) 

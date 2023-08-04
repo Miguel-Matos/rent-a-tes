@@ -13,7 +13,7 @@ export default function Header() {
   }
 
   return (
-    <div>
+    <div className='z-50'>
       <nav className='md:flex justify-between my-14 text-lg font-bold hidden'>
         <img className='w-10 md:w-16' src={logo} alt='Logo' />
         <Link id='home' className='hover:text-red-600' to='/'>Home</Link>
