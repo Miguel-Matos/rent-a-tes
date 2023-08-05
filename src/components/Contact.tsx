@@ -29,9 +29,10 @@ export default function Contact() {
         <button className=" bg-red-500 p-5 text-white font-bold text-lg mt-10 shadow-md hover:shadow-2xl focus:bg-red-600 rounded-md"><FontAwesomeIcon icon={faEnvelopeOpenText} /> Send Message</button>
       </form>
 
-      <div className='absolute -z-10 pointer-events-none overflow-hidden'>
-        <img className='opacity-20  object-none' src={world} alt="world" />
-      </div>
+        <div className='absolute left-0 lg:left-0 -z-10'>
+          <img className='opacity-40  w-screen object-none object-left min-h-[1500px]' src={world} alt="world" />
+        </div>
+      
 
     </div>
 
