@@ -20,7 +20,7 @@ function Card() {
   ]
 
   const reviewCard = reviews.map(review => 
-    <div className=' shadow-lg p-20'>
+    <div className=' shadow-lg p-20 flex flex-col justify-between'>
       <h2 className="text-xl font-bold pb-5">{review.review}</h2>
       <div className='flex items-center'>
         <img className=' rounded-full w-20 mr-5' src={review.pic} alt='pic'/>
