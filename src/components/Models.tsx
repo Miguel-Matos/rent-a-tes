@@ -53,16 +53,16 @@ function Card() {
   const card = cars.map(car => 
     <div className='border flex flex-col'>
       <img src={car.pic} alt={car.name} />
-      <div className='flex justify-between m-10'>
+      <div className='flex justify-between m-5 mb-5'>
         <div>
-          <h2 className='text-3xl font-bold mb-2'>{car.name}</h2>
+          <h2 className='text-2xl sm:text-3xl font-bold mb-2'>{car.name}</h2>
           <p>{car.stars}</p>
         </div>
-          <p className='text-3xl font-bold'>${car.price} per day</p>
+          <p className='text-2xl sm:text-3xl font-bold'>${car.price} per day</p>
       </div>
       
 
-      <div className='flex justify-between mx-10 mb-5'>
+      <div className='flex justify-between gap-1 mx-5 mb-5 text-center'>
         <div className='flex flex-col items-center'>
           <p className=''>{car.range} mi</p>
           <p>Range (EPA est.)</p>
@@ -89,7 +89,6 @@ export default function Models() {
 
   return(
     <div>
-
       <Card />
     </div>
 
