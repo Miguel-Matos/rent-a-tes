@@ -40,7 +40,7 @@ export default function Testimonials() {
   return(
     <div className="flex flex-col items-center py-14 mx-auto">
       <h3 className="text-xl font-bold pb-5">Reviewed by People</h3>
-      <h1 className="text-4xl font-bold pb-10">Client's Testimonials</h1>
+      <h1 className="text-4xl font-bold pb-10 text-center">Client's Testimonials</h1>
       <p className=" text-slate-600 text-center mb-16">We take pride in the positive impact we've made on our clients, and you can see it firsthand by exploring the heartwarming testimonials from our satisfied customers. From eco-conscious road trippers to tech-savvy explorers, our clients have experienced the thrill of driving Tesla's finest, and they can't wait to share their joy with you! So, hop on board, embrace the excitement, and be part of the Rentates family – where driving becomes a delightful, emissions-free delight!</p>
       <div>
         <Card />
