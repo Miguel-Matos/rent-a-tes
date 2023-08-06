@@ -31,8 +31,8 @@ export default function Header() {
         {burger ? (
           <div>
             <button className='absolute right-10 z-20' onClick={burgerDisplay}><FontAwesomeIcon icon={faXmark} size='xl' style={{color: colorVal}} onMouseEnter={() => setColor('red')} onMouseLeave={() => setColor('black')} /></button>
-            <div className='flex flex-col absolute left-0 pt-46 text-center bg-white gap-5 w-full h-screen'>
-              <Link onClick={burgerDisplay} className='hover:text-red-600' to='/'>Home</Link>
+            <div className='flex flex-col absolute top-0 left-0 text-center bg-white gap-5 w-full h-screen'>
+              <Link onClick={burgerDisplay} className='hover:text-red-600 pt-40' to='/'>Home</Link>
               <Link onClick={burgerDisplay} className='hover:text-red-600' to="/about">About</Link>
               <Link onClick={burgerDisplay} className='hover:text-red-600' to="/models">Models</Link>
               <Link onClick={burgerDisplay} className='hover:text-red-600' to="/testimonials">Testimonials</Link>
