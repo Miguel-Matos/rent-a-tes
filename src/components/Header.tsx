@@ -14,7 +14,7 @@ export default function Header() {
 
   return (
     <div className='z-50'>
-      <nav className='md:flex justify-between my-14 text-lg font-bold hidden'>
+      <nav className='md:flex justify-between content-center my-14 text-lg font-bold hidden'>
         <img className='w-10 md:w-16' src={logo} alt='Logo' />
         <Link id='home' className='hover:text-red-600' to='/'>Home</Link>
         <Link id='about' className='hover:text-red-600' to="/about">About</Link>
@@ -31,7 +31,7 @@ export default function Header() {
         {burger ? (
           <div>
             <button className='absolute right-10 z-20' onClick={burgerDisplay}><FontAwesomeIcon icon={faXmark} size='xl' style={{color: colorVal}} onMouseEnter={() => setColor('red')} onMouseLeave={() => setColor('black')} /></button>
-            <div className='flex flex-col absolute top-0 left-0 text-center bg-white gap-5 w-full h-screen'>
+            <div className='flex flex-col absolute top-0 left-0 text-center bg-white gap-10 text-2xl w-full h-screen'>
               <Link onClick={burgerDisplay} className='hover:text-red-600 pt-40' to='/'>Home</Link>
               <Link onClick={burgerDisplay} className='hover:text-red-600' to="/about">About</Link>
               <Link onClick={burgerDisplay} className='hover:text-red-600' to="/models">Models</Link>

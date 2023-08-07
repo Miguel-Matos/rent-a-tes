@@ -32,7 +32,7 @@ export default function Footer() {
           <p>Subscribe for the latest news and updates</p>
           <form className="flex flex-col gap-5 w-full mt-5">
             <input className="border p-2 flex-1" type="email" placeholder="Enter Email Address" />
-            <button className="border p-2 bg-red-500 text-white text-lg font-bold">Submit</button>
+            <button className="border p-2 bg-red-500 active:bg-red-600 text-white text-lg font-bold">Submit</button>
           </form>
         </div>
       </div>

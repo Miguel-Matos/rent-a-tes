@@ -77,7 +77,7 @@ function Card() {
         </div>
       </div>
       <hr className='w-3/4 mx-auto' />
-      <button className="bg-red-500 p-5 text-white font-bold text-lg mt-10 shadow-md hover:shadow-2xl focus:bg-red-600 rounded-md w-3/4 mx-auto mb-10">Book Ride</button>
+      <button className="bg-red-500 p-5 text-white font-bold text-lg mt-10 shadow-md hover:shadow-2xl active:bg-red-600 rounded-md w-3/4 mx-auto mb-10">Book Ride</button>
     </div>)
 
     return(

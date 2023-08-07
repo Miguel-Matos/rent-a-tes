@@ -26,7 +26,7 @@ export default function Contact() {
         <label className="text-center lg:text-left font-bold py-5 text-lg" htmlFor="info">Tell us about it<span className='text-red-500'>*</span></label>
         <textarea className="border bg-slate-100 p-5" id="info" placeholder="Description" />
 
-        <button className=" bg-red-500 p-5 text-white font-bold text-lg mt-10 shadow-md hover:shadow-2xl focus:bg-red-600 rounded-md"><FontAwesomeIcon icon={faEnvelopeOpenText} /> Send Message</button>
+        <button className=" bg-red-500 p-5 text-white font-bold text-lg mt-10 shadow-md hover:shadow-2xl active:bg-red-600 rounded-md"><FontAwesomeIcon icon={faEnvelopeOpenText} /> Send Message</button>
       </form>
 
         <div className='absolute left-0 lg:left-0 -z-10'>
