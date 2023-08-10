@@ -8,7 +8,7 @@ function Card() {
     review: string;
   }[] = [
     { 
-      name: 'Naka Dashi',
+      name: 'Dashi Tanaka',
       pic: head1,
       review: '"Driving a Tesla is the best way to let others know that you are better than them. I cannot afford one normally, so this service helps maintain the illusion. Thank you Rentates!"'
     },
@@ -20,7 +20,7 @@ function Card() {
   ]
 
   const reviewCard = reviews.map(review => 
-    <div className=' shadow-lg p-20 flex flex-col justify-between'>
+    <div className=' shadow-lg p-10 lg:p-20 flex flex-col justify-between'>
       <h2 className="text-xl font-bold pb-5">{review.review}</h2>
       <div className='flex items-center'>
         <img className=' rounded-full w-20 mr-5' src={review.pic} alt='pic'/>

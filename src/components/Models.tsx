@@ -64,15 +64,15 @@ function Card() {
 
       <div className='flex justify-between gap-1 mx-5 mb-5 text-center'>
         <div className='flex flex-col items-center'>
-          <p className=''>{car.range} mi</p>
+          <p className=''><span className='font-bold'>{car.range}</span> mi</p>
           <p>Range (EPA est.)</p>
         </div>
         <div className='flex flex-col items-center'>
-          <p>{car.speed} mph</p>
+          <p><span className='font-bold'>{car.speed}</span> mph</p>
           <p>Top Speed</p>
         </div>
         <div className='flex flex-col items-center'>
-          <p>{car.mph} sec</p>
+          <p><span className='font-bold'>{car.mph}</span> sec</p>
           <p>0-60 mph</p>
         </div>
       </div>
@@ -81,7 +81,7 @@ function Card() {
     </div>)
 
     return(
-      <div className='grid grid-cols-1 lg:grid-cols-2  gap-5'>{card}</div>
+      <div className='grid grid-cols-1 lg:grid-cols-2 lg:w-3/4 mx-auto gap-5'>{card}</div>
     )
 }
 
