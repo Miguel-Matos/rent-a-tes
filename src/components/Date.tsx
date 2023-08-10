@@ -6,7 +6,7 @@ export default function Date() {
   const car = cars.map(car => <option value={car}>{car}</option>)
   const location = locations.map(location => <option value={location}>{location}</option>)
   return(
-    <div>
+    <div className="mx-auto rounded-lg shadow-xl py-16 px-10">
       <h1 className="font-bold text-2xl">Book your Tesla</h1>
       <div>
         <form>
