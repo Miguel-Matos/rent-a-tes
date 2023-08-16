@@ -1,6 +1,7 @@
 import Plan from "./Plan"
 import Date from "./Date"
 import CarComparison from "./CarComparison"
+import Testimonials from "./Testimonials"
 
 export default function Home() {
 
@@ -9,6 +10,7 @@ export default function Home() {
       <Plan />
       <Date />
       <CarComparison />
+      <Testimonials />
     </div>
 
   ) 

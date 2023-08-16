@@ -70,22 +70,28 @@ export default function CarComparison() {
     setMph(car.mph)
   }} className='bg-slate-300 hover:bg-red-500 active:bg-red-500 focus:bg-red-500 py-5 text-lg font-bold hover:text-white focus:text-white active:text-white'>{car.name}</button>)
   return(
-    <div className='mx-auto'>
-          <div className='grid grid-cols-1 lg:grid-cols-4 mt-16 items-center'>
-      <div className='flex flex-col gap-2 mb-10 lg:mb-0'>{carSelect}</div>
-      <div className='col-span-3 grid grid-cols-1 lg:grid-cols-6 items-center'>
-        <img className='col-span-5 mb-10 lg:mb-0' src={carImg} alt='Tesla' />
-        <div className='flex flex-col gap-2 text-center lg:text-left'>
+
+    <div className=' my-20'>
+      <div className='text-center my-20'>
+        <h2 className='font-bold text-xl mb-3'>Vehicle Models</h2>
+        <h2 className='font-bold text-4xl mb-3'>Our Tesla Army</h2>
+        <p className='text-slate-600'>Choose the perfect Tesla for your next adventure or business trip</p>
+      </div>
+      <div className='grid grid-cols-1 lg:grid-cols-4 items-center'>
+        <div className='flex flex-col gap-2 mb-10 lg:mb-0'>{carSelect}</div>
+        <div className='col-span-3 grid grid-cols-1 lg:grid-cols-6 items-center'>
+          <img className='col-span-5 mb-10 lg:mb-0' src={carImg} alt='Tesla' />
+          <div className='flex flex-col gap-2 text-center lg:text-left'>
           <h2 className='text-xl font-bold'>{carList}</h2>
           <h3 className='text-lg font-bold'>${price} per day</h3>
           <p>{stars}</p>
           <p><span className='font-bold'>{range}</span> mi Range</p>
           <p><span className='font-bold'>{speed}</span> mph top speed</p>
           <p><span className='font-bold'>{mph}</span> sec</p>
+          <button className='py-3 px-10 border bg-red-500 active:bg-red-600 rounded-md text-white font-bold text-md hover:shadow-md'>Reserve</button>
         </div>
       </div>
-
-    </div>
+      </div>
     </div>
 
   )
