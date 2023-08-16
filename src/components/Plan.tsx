@@ -2,7 +2,7 @@ import redTes from '../img/top3.png'
 
 export default function Plan() {
   return(
-    <div className='lg:grid lg:grid-cols-2 2xl:grid-cols-3 gap-10 items-center'>
+    <div className='lg:grid lg:grid-cols-2 2xl:grid-cols-3 gap-10 items-center mb-10'>
       <div className='text-center lg:text-left mx-5 flex flex-col gap-5'>
         <h2 className='text-2xl font-bold'>Plan your trip now</h2>
         <h1 className='text-5xl font-bold'>Save <span className='text-red-500'>big</span> with our car rental</h1>

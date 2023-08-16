@@ -88,7 +88,7 @@ export default function CarComparison() {
           <p><span className='font-bold'>{range}</span> mi Range</p>
           <p><span className='font-bold'>{speed}</span> mph top speed</p>
           <p><span className='font-bold'>{mph}</span> sec</p>
-          <button className='py-3 px-10 border bg-red-500 active:bg-red-600 rounded-md text-white font-bold text-md hover:shadow-md'>Reserve</button>
+          <button className='mt-5 py-3 px-10 border bg-red-500 active:bg-red-600 rounded-md text-white font-bold text-md hover:shadow-md'>Select</button>
         </div>
       </div>
       </div>
