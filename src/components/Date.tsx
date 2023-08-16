@@ -8,8 +8,8 @@ export default function Date() {
   const locations = ['Gainesville', 'Jacksonville', 'Miami', 'Orlando']
 
 
-  const car = cars.map(car => <option value={car}>{car}</option>)
-  const location = locations.map(location => <option value={location}>{location}</option>)
+  const car = cars.map(car => <option key={car} value={car}>{car}</option>)
+  const location = locations.map(location => <option key={location} value={location}>{location}</option>)
   return(
     <div className="mx-auto rounded-lg shadow-xl py-16 px-10">
       <h1 className="font-bold text-2xl mb-5">Book your Tesla</h1>
@@ -23,16 +23,16 @@ export default function Date() {
 
           <div className="flex flex-col gap-1">
             <label className="font-bold text-lg" htmlFor="car"><FontAwesomeIcon icon={faCar} style={{color: "#e32400",}} /> Select your Car Type <span className="text-red-600">*</span></label>
-            <select className="text-slate-500 border p-2" name="car" id="car">
-              <option selected disabled hidden>Select your car</option>
+            <select defaultValue={'DEFAULT'} className="text-slate-500 border p-2" name="car" id="car">
+              <option key={'DEFAULT'} value={'DEFAULT'} disabled hidden>Select your car</option>
               {car}
             </select>
           </div>
 
           <div className="flex flex-col gap-1">
             <label className="font-bold text-lg" htmlFor="pick"><FontAwesomeIcon icon={faLocationDot} style={{color: "#e32400",}} /> Pick-Up <span className="text-red-600">*</span></label>
-            <select className="text-slate-500 border p-2" name="pick" id="pick">
-              <option selected disabled hidden>Select your pick-up location</option>
+            <select defaultValue={'DEFAULT'}  className="text-slate-500 border p-2" name="pick" id="pick">
+              <option key={'DEFAULT'} value={'DEFAULT'} disabled hidden>Select your pick-up location</option>
               {location}
             </select>
           </div>
@@ -40,8 +40,8 @@ export default function Date() {
 
           <div className="flex flex-col gap-1">
             <label className="font-bold text-lg" htmlFor="drop"><FontAwesomeIcon icon={faLocationDot} style={{color: "#e32400",}} /> Drop Off <span className="text-red-600">*</span></label>
-            <select className="text-slate-500 border p-2" name="drop" id="drop">
-              <option selected disabled hidden>Select your drop off location</option>
+            <select defaultValue={'DEFAULT'}  className="text-slate-500 border p-2" name="drop" id="drop">
+              <option key={'DEFAULT'} value={'DEFAULT'} disabled hidden>Select your drop off location</option>
               {location}
             </select>
           </div>

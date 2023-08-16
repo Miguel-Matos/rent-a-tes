@@ -54,15 +54,39 @@ export default function CarComparison() {
 
   const [carList, setCar] = useState('Model 3')
   const [carImg, setImg] = useState(model3)
+  const [price, setPrice] = useState(45)
+  const [stars, setStars] = useState('⭐️⭐️⭐️')
+  const [range, setRange] = useState(272)
+  const [speed, setSpeed] = useState(140)
+  const [mph, setMph] = useState(5.8)
 
-  const carSelect = cars.map(car => <button onClick={() => {
+  const carSelect = cars.map(car => <button key={car.name} onClick={() => {
     setCar(car.name)
     setImg(car.pic)
-  }} className='bg-slate-300 hover:bg-red-500 active:bg-red-500 focus:bg-red-500'>{car.name}</button>)
+    setPrice(car.price)
+    setStars(car.stars)
+    setRange(car.range)
+    setSpeed(car.speed)
+    setMph(car.mph)
+  }} className='bg-slate-300 hover:bg-red-500 active:bg-red-500 focus:bg-red-500 py-5 text-lg font-bold hover:text-white focus:text-white active:text-white'>{car.name}</button>)
   return(
-    <div>
-      <div className='flex flex-col gap-2'>{carSelect}</div>
-      <img src={carImg} alt='Tesla' />
+    <div className='mx-auto'>
+          <div className='grid grid-cols-1 lg:grid-cols-4 mt-16 items-center'>
+      <div className='flex flex-col gap-2 mb-10 lg:mb-0'>{carSelect}</div>
+      <div className='col-span-3 grid grid-cols-1 lg:grid-cols-6 items-center'>
+        <img className='col-span-5 mb-10 lg:mb-0' src={carImg} alt='Tesla' />
+        <div className='flex flex-col gap-2 text-center lg:text-left'>
+          <h2 className='text-xl font-bold'>{carList}</h2>
+          <h3 className='text-lg font-bold'>${price} per day</h3>
+          <p>{stars}</p>
+          <p><span className='font-bold'>{range}</span> mi Range</p>
+          <p><span className='font-bold'>{speed}</span> mph top speed</p>
+          <p><span className='font-bold'>{mph}</span> sec</p>
+        </div>
+      </div>
+
     </div>
+    </div>
+
   )
 }
