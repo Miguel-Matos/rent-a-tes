@@ -6,9 +6,9 @@ function Menu(props: {question: string; answer: string; id: number}) {
   const [closed, setClosed] = useState(true);
   return(
     <div className=''>
-      <div className='flex justify-between p-5 hover:bg-red-500 hover:text-white font-bold items-center'>
+      <div onClick={() => setClosed(!closed)} className='flex justify-between p-5 hover:bg-red-500 hover:text-white font-bold items-center'>
         <h2 className='text-lg'>{props.question}</h2>
-        <button onClick={() => setClosed(!closed)}>
+        <button>
           {closed ? <FontAwesomeIcon icon={faAngleDown} /> : <FontAwesomeIcon icon={faAngleUp} />}
         </button>
       </div>
