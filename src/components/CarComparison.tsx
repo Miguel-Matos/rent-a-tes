@@ -71,7 +71,7 @@ export default function CarComparison() {
   }} className='bg-slate-300 hover:bg-red-500 active:bg-red-500 focus:bg-red-500 py-5 text-lg font-bold hover:text-white focus:text-white active:text-white'>{car.name}</button>)
   return(
 
-    <div className=' my-20'>
+    <div className='mb-10'>
       <div className='text-center my-20'>
         <h2 className='font-bold text-xl mb-3'>Vehicle Models</h2>
         <h2 className='font-bold text-4xl mb-3'>Our Tesla Army</h2>
