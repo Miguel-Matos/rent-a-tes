@@ -81,7 +81,7 @@ function Card() {
     </div>)
 
     return(
-      <div className='grid grid-cols-1 lg:grid-cols-2 lg:w-3/4 mx-auto gap-5'>{card}</div>
+      <div className='grid grid-cols-1 lg:grid-cols-2 xl:w-3/4 xl:pt-10 mx-auto gap-5'>{card}</div>
     )
 }
 

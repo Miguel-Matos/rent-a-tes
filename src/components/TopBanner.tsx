@@ -29,15 +29,13 @@ export default function TopBanner() {
 
   return(
     <div className='h-[315px]'>
-      <div className='absolute top-0 left-0  pointer-events-none overflow-hidden'>
-        <div className=' bg-white w-screen min-h-[400px] h-[500px] opacity-50 absolute'></div>
-        <img className='min-h-[400px] -z-20 object-cover' src={top} alt="top banner" />
+      <div className='absolute top-0 left-0 h-[400px] 2xl:h-[500px] pointer-events-none overflow-hidden'>
+        <div className=' bg-white w-screen min-h-[400px] 2xl:h-[500px] opacity-50 absolute'></div>
+        <img className='min-h-[400px] -z-20 object-cover 2xl:-mt-16 w-screen' src={top} alt="top banner" />
       </div>
       <div className='flex md:justify-center'>
         <h1 className='text-5xl z-10 font-bold p-5 w-3/4'>{currentPageName}</h1>
       </div>
     </div>
-
-// min-h-[250px] xl:min-h-[275px] 2xl:min-h-[300px]
   )
 }

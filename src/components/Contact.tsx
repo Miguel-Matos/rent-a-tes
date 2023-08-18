@@ -5,7 +5,7 @@ import world from '../img/world.svg'
 export default function Contact() {
 
   return(
-    <div className="flex flex-col items-center lg:flex-row lg:gap-5 xl:gap-10 2xl:gap-14">
+    <div className="flex flex-col items-center lg:flex-row lg:gap-5 xl:gap-10 2xl:gap-14 2xl:mt-20">
       <div>
         <h3 className="text-4xl font-bold text-center lg:text-left mb-10">Need additional information?</h3>
         <p className="text-center lg:text-left mb-5 text-lg text-slate-600">A team of skilled professionals with over 15 years of experience are happy to assist with any questions or concerns.</p>
