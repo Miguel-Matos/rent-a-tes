@@ -14,8 +14,8 @@ export default function Header() {
 
   return (
     <div className='z-50'>
-      <nav className='md:flex justify-between content-center my-14 text-lg font-bold hidden'>
-        <img className='w-10 md:w-16' src={logo} alt='Logo' />
+      <nav className='md:flex justify-between content-center my-14 text-lg font-bold hidden'>     
+        <Link id='home' className='hover:text-red-600' to='/'><img className='w-10 md:w-16' src={logo} alt='Logo' /></Link>
         <Link id='home' className='hover:text-red-600' to='/'>Home</Link>
         <Link id='about' className='hover:text-red-600' to="/about">About</Link>
         <Link id='models' className='hover:text-red-600' to="/models">Models</Link>
@@ -24,7 +24,7 @@ export default function Header() {
       </nav>
 
       <nav className='flex justify-between my-14 text-lg font-bold md:hidden'>
-        <img className='w-10 md:w-16' src={logo} alt='Logo' />
+        <Link id='home' className='hover:text-red-600' to='/'><img className='w-10 md:w-16' src={logo} alt='Logo' /></Link>
         <div hidden={burger}>
           <FontAwesomeIcon icon={faBars} size='2xl' onClick={burgerDisplay} style={{color: colorVal}} onMouseEnter={() => setColor('red')} onMouseLeave={() => setColor('black')} />
         </div>
