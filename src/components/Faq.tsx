@@ -39,12 +39,12 @@ export default function Faq() {
   } [] = [
     {
       id: 1,
-      q: 'Is Rent a Tes a real Website?',
+      q: 'Is Rent a Tes a real website?',
       a: 'No. This was a portfolio project made by Miguel Matos'
     }, 
     {
       id: 2,
-      q: 'How was this Website made',
+      q: 'How was Rentates made?',
       a: 'This site was created with React, Typescript, and styled with Tailwind CSS.'
     },
     {
