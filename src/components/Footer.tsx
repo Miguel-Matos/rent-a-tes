@@ -9,7 +9,7 @@ export default function Footer() {
         <div className="grid md:grid-cols-2 grid-cols-1 lg:grid-cols-4 gap-10 my-14">
           <div className="flex flex-col items-center md:items-start gap-5">
             <h3 className="text-3xl font-bold">Rent a Tes</h3>
-            <p className="text-center md:text-start text-slate-600">Rentates is a portfolio project created by Miguel Matos. If you are interested in working together, please contact me below.</p>
+            <p className="text-center md:text-start text-slate-600">Rent a Tes is a portfolio project created by Miguel Matos. If you are interested in working together, please contact me below.</p>
             <a href="tel:3528182577"><FontAwesomeIcon icon={faPhone} /> (352)-818-2577</a>
             <a href="mailto: miguel@matosmiguel.com"><FontAwesomeIcon icon={faEnvelope} /> Miguel@matosmiguel.com</a>
           </div>

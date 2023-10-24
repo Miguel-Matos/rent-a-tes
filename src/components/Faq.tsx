@@ -44,7 +44,7 @@ export default function Faq() {
     }, 
     {
       id: 2,
-      q: 'How was Rentates made?',
+      q: 'How was Rent a Tes made?',
       a: 'This site was created with React, Typescript, and styled with Tailwind CSS.'
     },
     {
