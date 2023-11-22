@@ -1,4 +1,4 @@
-import bottom from '../img/modelY.png';
+import bottom from '../img/modelY.webp';
 
 export default function BottomBanner() {
   return(

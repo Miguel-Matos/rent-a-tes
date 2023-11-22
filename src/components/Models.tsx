@@ -1,7 +1,7 @@
-import mod3 from '../img/modelPage3.jpg';
-import y from '../img/modelPageY.jpg';
-import s from '../img/modelPageS.jpg';
-import x from '../img/modelPageX.jpg';
+import mod3 from '../img/modelPage3.webp';
+import y from '../img/modelPageY.webp';
+import s from '../img/modelPageS.webp';
+import x from '../img/modelPageX.webp';
 
 function Card() {
   const cars: {

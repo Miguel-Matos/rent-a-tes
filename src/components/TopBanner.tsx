@@ -1,5 +1,5 @@
 import React from 'react';
-import top from '../img/top3.jpg';
+import top from '../img/topBanner.webp';
 import { useLocation } from 'react-router-dom';
 
 // Define an interface with the page names

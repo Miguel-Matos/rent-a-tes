@@ -1,5 +1,5 @@
-import head1 from '../img/head1.jpg';
-import head2 from '../img/head2.jpg';
+import head1 from '../img/head1.webp';
+import head2 from '../img/head2.webp';
 
 function Card() {
   const reviews : {

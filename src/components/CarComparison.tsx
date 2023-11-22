@@ -1,7 +1,7 @@
-import model3 from '../img/3.png';
-import modelY from '../img/y.png';
-import modelS from '../img/s.png';
-import modelX from '../img/x.png';
+import model3 from '../img/mod3White.webp';
+import modelY from '../img/modYBlack.webp';
+import modelS from '../img/modSRed.webp';
+import modelX from '../img/modXBlue.webp';
 import { useState } from 'react';
 
 export default function CarComparison() {

@@ -1,4 +1,4 @@
-import about from '../img/about.jpg';
+import about from '../img/about.webp';
 
 export default function About() {
   return(

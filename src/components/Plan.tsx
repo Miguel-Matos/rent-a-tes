@@ -1,4 +1,4 @@
-import redTes from '../img/top3.png';
+import redTes from '../img/top3Red.webp';
 
 export default function Plan() {
   return(
