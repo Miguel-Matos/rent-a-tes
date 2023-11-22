@@ -1,20 +1,21 @@
-import DatePick from "./DatePick"
+import DatePick from "./DatePick";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCar, faLocationDot, faCalendarDays } from '@fortawesome/free-solid-svg-icons';
 
 export default function Date() {
 
-  const cars = ['Model 3', 'Model Y', 'Model S', 'Model X']
-  const locations = ['Gainesville', 'Jacksonville', 'Miami', 'Orlando']
+  const cars = ['Model 3', 'Model Y', 'Model S', 'Model X'];
+  const locations = ['Gainesville', 'Jacksonville', 'Miami', 'Orlando'];
 
 
-  const car = cars.map(car => <option key={car} value={car}>{car}</option>)
-  const location = locations.map(location => <option key={location} value={location}>{location}</option>)
+  const car = cars.map(car => <option key={car} value={car}>{car}</option>);
+  const location = locations.map(location => <option key={location} value={location}>{location}</option>);
   return(
     <div className="mx-auto rounded-lg shadow-xl py-16 px-10">
       <h1 className="font-bold text-2xl mb-5">Book your Tesla</h1>
       <div>
-        <div className="bg-red-200 flex justify-between p-3 rounded-lg text-lg mb-5 hidden">
+        {/* Need to finish adding the alert */}
+        <div className="bg-red-200 justify-between p-3 rounded-lg text-lg mb-5 hidden">
           <p>All fields required!</p>
           <button>X</button>
         </div>
@@ -60,5 +61,5 @@ export default function Date() {
         </form>
       </div>
     </div>
-  )
-}
+  );
+};

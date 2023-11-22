@@ -1,7 +1,7 @@
-import mod3 from '../img/modelPage3.jpg'
-import y from '../img/modelPageY.jpg'
-import s from '../img/modelPageS.jpg'
-import x from '../img/modelPageX.jpg'
+import mod3 from '../img/modelPage3.jpg';
+import y from '../img/modelPageY.jpg';
+import s from '../img/modelPageS.jpg';
+import x from '../img/modelPageX.jpg';
 
 function Card() {
   const cars: {
@@ -49,7 +49,7 @@ function Card() {
       speed: 149,
       mph: 3.8
     }
-  ]
+  ];
   const card = cars.map(car => 
     <div className='border flex flex-col'>
       <img src={car.pic} alt={car.name} />
@@ -82,8 +82,8 @@ function Card() {
 
     return(
       <div className='grid grid-cols-1 lg:grid-cols-2 xl:w-3/4 xl:pt-10 mx-auto gap-5'>{card}</div>
-    )
-}
+    );
+};
 
 export default function Models() {
 
@@ -92,7 +92,5 @@ export default function Models() {
       <Card />
     </div>
 
-  ) 
-
-  
-}
+  ); 
+};

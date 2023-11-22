@@ -1,4 +1,4 @@
-import redTes from '../img/top3.png'
+import redTes from '../img/top3.png';
 
 export default function Plan() {
   return(
@@ -14,5 +14,5 @@ export default function Plan() {
       </div>
       <img className=' object-scale-down 2xl:h-96 hidden lg:block 2xl:col-span-2' src={redTes} alt='red tesla' />
     </div>
-  )
-}
+  );
+};

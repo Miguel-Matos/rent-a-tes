@@ -1,8 +1,8 @@
-import model3 from '../img/3.png'
-import modelY from '../img/y.png'
-import modelS from '../img/s.png'
-import modelX from '../img/x.png'
-import { useState } from 'react'
+import model3 from '../img/3.png';
+import modelY from '../img/y.png';
+import modelS from '../img/s.png';
+import modelX from '../img/x.png';
+import { useState } from 'react';
 
 export default function CarComparison() {
   const cars: {
@@ -50,15 +50,15 @@ export default function CarComparison() {
       speed: 149,
       mph: 3.8
     }
-  ]
+  ];
 
-  const [carList, setCar] = useState('Model 3')
-  const [carImg, setImg] = useState(model3)
-  const [price, setPrice] = useState(45)
-  const [stars, setStars] = useState('⭐️⭐️⭐️')
-  const [range, setRange] = useState(272)
-  const [speed, setSpeed] = useState(140)
-  const [mph, setMph] = useState(5.8)
+  const [carList, setCar] = useState('Model 3');
+  const [carImg, setImg] = useState(model3);
+  const [price, setPrice] = useState(45);
+  const [stars, setStars] = useState('⭐️⭐️⭐️');
+  const [range, setRange] = useState(272);
+  const [speed, setSpeed] = useState(140);
+  const [mph, setMph] = useState(5.8);
 
   const carSelect = cars.map(car => <button key={car.name} onClick={() => {
     setCar(car.name)
@@ -68,7 +68,8 @@ export default function CarComparison() {
     setRange(car.range)
     setSpeed(car.speed)
     setMph(car.mph)
-  }} className='bg-slate-300 hover:bg-red-500 active:bg-red-500 focus:bg-red-500 py-5 text-lg font-bold hover:text-white focus:text-white active:text-white'>{car.name}</button>)
+  }} className='bg-slate-300 hover:bg-red-500 active:bg-red-500 focus:bg-red-500 py-5 text-lg font-bold hover:text-white focus:text-white active:text-white'>{car.name}</button>);
+
   return(
 
     <div className='mb-10'>
@@ -93,6 +94,5 @@ export default function CarComparison() {
       </div>
       </div>
     </div>
-
-  )
-}
+  );
+};

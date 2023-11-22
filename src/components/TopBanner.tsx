@@ -9,7 +9,7 @@ interface Pages {
   models: string;
   testimonials: string;
   contact: string;
-}
+};
 
 export default function TopBanner() {
 
@@ -37,5 +37,5 @@ export default function TopBanner() {
         <h1 className='text-5xl z-10 font-bold p-5 w-3/4'>{currentPageName}</h1>
       </div>
     </div>
-  )
-}
+  );
+};

@@ -1,9 +1,8 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPhone, faEnvelope, faLocationDot, faEnvelopeOpenText } from '@fortawesome/free-solid-svg-icons';
-import world from '../img/world.svg'
+import world from '../img/world.svg';
 
 export default function Contact() {
-
   return(
     <div className="flex flex-col items-center lg:flex-row lg:gap-5 xl:gap-10 2xl:gap-14 2xl:mt-20">
       <div>
@@ -32,9 +31,7 @@ export default function Contact() {
         <div className='absolute left-0 lg:left-0 -z-10'>
           <img className='opacity-40  w-screen object-none object-left min-h-[1500px]' src={world} alt="world" />
         </div>
-      
-
     </div>
 
-  ) 
-}
+  ); 
+};

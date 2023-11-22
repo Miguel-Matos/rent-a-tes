@@ -28,8 +28,8 @@ function Menu(props: {question: string; answer: string; id: number}) {
         </div> : null}
       </div>
     </div>
-  )
-}
+  );
+};
 
 export default function Faq() {
   const questions: {
@@ -52,8 +52,8 @@ export default function Faq() {
       q: 'How can we contact you?',
       a: 'You can contact me through one of the below icons'
     }
-  ]
-  const questionBox = questions.map(question => <Menu id={question.id} key={question.id} question={question.q} answer={question.a} />)
+  ];
+  const questionBox = questions.map(question => <Menu id={question.id} key={question.id} question={question.q} answer={question.a} />);
   return(
     <div className='mx-auto text-center'>
       <h2 className='font-bold text-xl mb-2'>FAQ</h2>
@@ -65,5 +65,5 @@ export default function Faq() {
       </div>
 
     </div>
-  )
-}
+  );
+};

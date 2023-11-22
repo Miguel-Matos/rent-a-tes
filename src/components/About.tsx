@@ -1,7 +1,6 @@
-import about from '../img/about.jpg'
+import about from '../img/about.jpg';
 
 export default function About() {
-
   return(
     <div className='2xl:mt-10'>
       <div className='flex gap-5 xl:gap-10 flex-col items-center lg:flex-row'>
@@ -13,8 +12,5 @@ export default function About() {
         </div>
       </div>
           </div>
-
-  ) 
-
-  
-}
+  ); 
+};

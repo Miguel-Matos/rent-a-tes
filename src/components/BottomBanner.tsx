@@ -1,4 +1,4 @@
-import bottom from '../img/modelY.png'
+import bottom from '../img/modelY.png';
 
 export default function BottomBanner() {
   return(
@@ -12,5 +12,5 @@ export default function BottomBanner() {
           <a className='text-4xl font-bold text-red-600 z-20' href="tel:1234567890">(123)-456-7890</a>
         </div>
       </div>
-  )
-}
+  );
+};

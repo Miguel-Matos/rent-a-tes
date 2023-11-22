@@ -1,5 +1,5 @@
-import head1 from '../img/head1.jpg'
-import head2 from '../img/head2.jpg'
+import head1 from '../img/head1.jpg';
+import head2 from '../img/head2.jpg';
 
 function Card() {
   const reviews : {
@@ -17,7 +17,7 @@ function Card() {
       pic: head2,
       review: '"Rentates is the Tesla dreamland of rentals! Cruising emission-free in their sleek electric cars made me feel like a hero on a mission! Bravo, Rentates, for making green driving an electrifying joy!"'
     }
-  ]
+  ];
 
   const reviewCard = reviews.map(review => 
     <div className=' shadow-lg p-10 lg:p-20 flex flex-col justify-between'>
@@ -26,16 +26,14 @@ function Card() {
         <img className=' rounded-full w-20 mr-5' src={review.pic} alt='pic'/>
         <p className='font-bold text-lg'>{review.name}</p>
       </div>
-    </div>)
+    </div>);
 
   return (
     <div className='flex flex-col lg:flex-row gap-5'>{reviewCard}</div>
-  )
-}
+  );
+};
 
 export default function Testimonials() {
-
-
 
   return(
     <div className="flex flex-col items-center py-14 mx-auto">
@@ -48,7 +46,5 @@ export default function Testimonials() {
 
     </div>
 
-  ) 
-
-  
-}
+  );
+};
